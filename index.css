@@ -1,0 +1,22 @@
+
+*{margin: 0px;
+    padding: 0px;}
+    
+div{
+    padding:5px;
+    margin:5px;
+    border:2px solid black
+}
+
+
+.bloquesDias{
+    display: flex;
+    border:3px solid purple;
+    flex-wrap: wrap;
+}
+.day{
+    display: flex;
+}
+.contentLunes, .contentMartes, .contentMiercoles, .contentJueves, .contentViernes{
+    display: flex;
+}
