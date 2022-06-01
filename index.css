@@ -1,22 +1,87 @@
 
 *{margin: 0px;
-    padding: 0px;}
-    
-div{
-    padding:5px;
-    margin:5px;
-    border:2px solid black
-}
+    padding: 0px;
+box-sizing: border-box;
 
+}
+    
+
+
+.day{
+    
+    background-color:white;
+    border-bottom:1px solid lightgray
+}
 
 .bloquesDias{
     display: flex;
-    border:3px solid purple;
-    flex-wrap: wrap;
+    width:1000px;
+  
+
+    border:solid 6px gray;
+    height: auto
 }
 .day{
     display: flex;
+    
+    
 }
 .contentLunes, .contentMartes, .contentMiercoles, .contentJueves, .contentViernes{
     display: flex;
+    text-align: center;
+}
+
+.bloqueLunes, .bloqueMartes, .bloqueMiercoles, .bloqueJueves, .bloqueViernes{
+    background-color:oldlace;
+    
+}
+
+.profe:hover{
+    background-color:white
+    }
+.aula:hover{
+    background-color:white
+    }
+.uf:hover{
+    background-color:white
+    }
+.modulo:hover{
+    background-color:white
+    }
+.header{
+    border:brown solid 7px;
+    display: flex;
+    position:fixed;
+}
+.vacio{
+    border:purple solid 7px;
+    width: 200px;
+}
+.body{
+    
+    padding-top: 200px;
+    display: flex;
+    border:lightgreen solid 7px
+    
+}
+.quadricula{
+    height:2000px;
+    width: 1000px;
+    
+}
+.student{
+    display: flex;
+    border:solid black 1px;
+    height:30px;
+}
+
+.alumnos{
+    border:red solid 7px;
+    width: 200px;
+}
+
+.casilla{
+    width:30px;
+    height:30px;
+    border:1px solid
 }

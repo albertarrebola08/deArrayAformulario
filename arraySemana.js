@@ -40,6 +40,14 @@
             "aula":"T6"
         },
         {		
+            "fecha":"2021/09/20",
+            "hora":false,
+            "modulo":false,
+            "uf":false,
+            "profesor":false,
+            "aula":false
+        },
+        {		
             "fecha":"2021/09/21",
             "hora":1,
             "modulo":6,
@@ -79,9 +87,14 @@
             "profesor":"C.A",
             "aula":"T6"
         },
-       
-        
-    
+        {		
+            "fecha":"2021/09/21",
+            "hora":false,
+            "modulo":false,
+            "uf":false,
+            "profesor":false,
+            "aula":false
+        },
         {		
             "fecha":"2021/09/22",
             "hora":1,
@@ -122,8 +135,14 @@
             "profesor":"C.R",
             "aula":"T6"
         },
-        
-        
+        {		
+            "fecha":"2021/09/22",
+            "hora":false,
+            "modulo":false,
+            "uf":false,
+            "profesor":false,
+            "aula":false
+        },
         {		
             "fecha":"2021/09/23",
             "hora":1,
@@ -164,8 +183,15 @@
             "profesor":"C.A",
             "aula":"T6"
         },
-    
-    
+        {		
+            "fecha":"2021/09/23",
+            "hora":false,
+            "modulo":false,
+            "uf":false,
+            "profesor":false,
+            "aula":false
+        },
+    //////////////////// viernes /////////////
         {		
             "fecha":"2021/09/24",
             "hora":1,
@@ -206,6 +232,7 @@
             "profesor":"J.E",
             "aula":"T6"
         },
+        
         {		
             "fecha":"2021/09/24",
             "hora":6,

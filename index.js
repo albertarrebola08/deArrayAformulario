@@ -23,32 +23,42 @@ function sacaDia(i){
 
 
 // i para las horas, del 0 al 4
-function pintaDatos(registro){
+function pintaDatos(registro,dia){
     var i = registro;
     console.log(i);
-    var nombreDia = sacaDia(i)
-    
-
+    var nombreDia = sacaDia(i+1)
     var nombreDiaAnterior = nombreDia;
-  
+    
     var html = ''
-    while(nombreDia==nombreDiaAnterior){
-        
-    document.querySelector(`div[data-fecha='${i}']`).innerHTML = arraySemana[registro].fecha;
-    console.log('hora ' +i);
+    while((nombreDia==nombreDiaAnterior&&i<arraySemana.length)){
+        // if(arraySemana[i].modulo==false){
+        //     console.log('FAAAALSSSSSSSSSSSOOOOOOOOOO')
+        //     document.querySelector('.contentJueves').classList.add('loco')
+        // }
+    i++;
+    
+    document.querySelector(`div[data-fecha='${dia}']`).innerHTML = arraySemana[registro].fecha;
+    if(arraySemana[i-1].modulo==false){console.log('falsoooooooooooooooooooooooooooooooooooooooooo');}
+    else{
     html +=  `
+    
     <div class="h">
-        <div class="modulo">${arraySemana[registro].modulo}</div>
-        <div class="uf">${arraySemana[registro].uf}</div>
-        <div class="profe">${arraySemana[registro].profesor}</div>
-        <div class="aula">${arraySemana[registro].aula}</div>
+        <div class=" casilla modulo">${arraySemana[registro].modulo}</div>
+        <div class="casilla uf">${arraySemana[registro].uf}</div>
+        <div class="casilla profe">${arraySemana[registro].profesor}</div>
+        <div class="casilla aula">${arraySemana[registro].aula}</div>
     </div>`
-        
-        
-        registro++;
-        i++
+    }
+    
+    registro++;
+
         nombreDiaAnterior = nombreDia
-        nombreDia = sacaDia(i);
+        console.log('hora '+i);
+        if(i<(arraySemana.length-1)){
+            
+            nombreDia = sacaDia(i);
+        }
+        
         console.log('WHILE '+ registro);
         
     }
@@ -56,17 +66,45 @@ function pintaDatos(registro){
     return html
 }
 
+function pintaAlumnos(){
+    htmlAlumnos = ''
+    for(let i=0; i<arrayUsuarios.length; i++){
+        htmlAlumnos +=  `
+    
+    <div class="student fs-6">
+        <div class="numOrden">${i}</div>
+        <div class="studentName">${arrayUsuarios[i].nombre+' '+arrayUsuarios[i].apellidos} </div>
+    </div>`
+    }
+    return htmlAlumnos
+}
 
-document.querySelector(".contentLunes").innerHTML = pintaDatos(0)
-document.querySelector(".contentMartes").innerHTML = pintaDatos(5)
-document.querySelector(".contentMiercoles").innerHTML = pintaDatos(10)
-document.querySelector(".contentJueves").innerHTML = pintaDatos(15)
-document.querySelector(".contentViernes").innerHTML = pintaDatos(20)
 
 
 
 
 
+
+
+
+
+
+
+
+document.querySelector(".contentLunes").innerHTML = pintaDatos(0,"lunes")
+document.querySelector(".contentMartes").innerHTML = pintaDatos(6,"martes")
+document.querySelector(".contentMiercoles").innerHTML = pintaDatos(12,"miercoles")
+document.querySelector(".contentJueves").innerHTML = pintaDatos(18,"jueves")
+document.querySelector(".contentViernes").innerHTML = pintaDatos(24,"viernes")
+
+console.log('Longitud de array es '+ arraySemana.length);
+
+document.querySelector(".listaAlumnos").innerHTML = pintaAlumnos()
+
+
+
+// <div class="numOrden"></div>
+// <div class="studentName"></div>
 
 
 
