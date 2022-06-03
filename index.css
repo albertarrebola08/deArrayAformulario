@@ -16,9 +16,6 @@ box-sizing: border-box;
 .bloquesDias{
     display: flex;
     width:1000px;
-  
-
-    border:solid 6px gray;
     height: auto
 }
 .day{
@@ -49,24 +46,26 @@ box-sizing: border-box;
     background-color:white
     }
 .header{
-    border:brown solid 7px;
+    
     display: flex;
     position:fixed;
 }
 .vacio{
-    border:purple solid 7px;
+  
     width: 200px;
+    background-color: rgb(28, 28, 112);
 }
 .body{
     
     padding-top: 200px;
     display: flex;
-    border:lightgreen solid 7px
+   
     
 }
 .quadricula{
     height:2000px;
     width: 1000px;
+    display: flex;
     
 }
 .student{
@@ -76,7 +75,7 @@ box-sizing: border-box;
 }
 
 .alumnos{
-    border:red solid 7px;
+
     width: 200px;
 }
 

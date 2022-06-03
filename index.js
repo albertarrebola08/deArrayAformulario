@@ -25,20 +25,20 @@ function sacaDia(i){
 // i para las horas, del 0 al 4
 function pintaDatos(registro,dia){
     var i = registro;
-    console.log(i);
+    // console.log(i);
     var nombreDia = sacaDia(i+1)
     var nombreDiaAnterior = nombreDia;
     
     var html = ''
     while((nombreDia==nombreDiaAnterior&&i<arraySemana.length)){
-        // if(arraySemana[i].modulo==false){
-        //     console.log('FAAAALSSSSSSSSSSSOOOOOOOOOO')
-        //     document.querySelector('.contentJueves').classList.add('loco')
-        // }
+        
     i++;
     
     document.querySelector(`div[data-fecha='${dia}']`).innerHTML = arraySemana[registro].fecha;
-    if(arraySemana[i-1].modulo==false){console.log('falsoooooooooooooooooooooooooooooooooooooooooo');}
+    if(arraySemana[i-1].modulo==null)
+    {
+        // console.log('falsoooooooooooooooooooooooooooooooooooooooooo');
+    }
     else{
     html +=  `
     
@@ -59,7 +59,7 @@ function pintaDatos(registro,dia){
             nombreDia = sacaDia(i);
         }
         
-        console.log('WHILE '+ registro);
+        // console.log('WHILE '+ registro);
         
     }
     
@@ -67,7 +67,7 @@ function pintaDatos(registro,dia){
 }
 
 function pintaAlumnos(){
-    htmlAlumnos = ''
+    var htmlAlumnos = ''
     for(let i=0; i<arrayUsuarios.length; i++){
         htmlAlumnos +=  `
     
@@ -79,8 +79,36 @@ function pintaAlumnos(){
     return htmlAlumnos
 }
 
+function pintaCuadricula(){
+    var htmlCuadricula = '<div>'
+    console.log(arrayUsuarios.length);
+    
+    for(let i=0; i<arrayUsuarios.length; i++){
+        htmlCuadricula +=`
+        <div class="divporalumno d-flex">`
+        
+        for(let y=0;y<arraySemana.length;y++){
+            // console.log('');
+            if(arraySemana[y].modulo==null){
+                console.log('NADA');
+             }
+             else{
+                console.log('pinto');
+                htmlCuadricula +=`
+                <div class="casilla">${y}</div>`
+                
+            }
+            
+            }
+        htmlCuadricula+=`</div>`
+            
+              
+            
+        }
+        return htmlCuadricula
+}
 
-
+document.querySelector('.quadricula').innerHTML = pintaCuadricula()
 
 
 
@@ -97,7 +125,7 @@ document.querySelector(".contentMiercoles").innerHTML = pintaDatos(12,"miercoles
 document.querySelector(".contentJueves").innerHTML = pintaDatos(18,"jueves")
 document.querySelector(".contentViernes").innerHTML = pintaDatos(24,"viernes")
 
-console.log('Longitud de array es '+ arraySemana.length);
+// console.log('Longitud de array es '+ arraySemana.length);
 
 document.querySelector(".listaAlumnos").innerHTML = pintaAlumnos()
 

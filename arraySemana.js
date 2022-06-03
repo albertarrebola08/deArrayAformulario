@@ -41,11 +41,11 @@
         },
         {		
             "fecha":"2021/09/20",
-            "hora":false,
-            "modulo":false,
-            "uf":false,
-            "profesor":false,
-            "aula":false
+            "hora":null,
+            "modulo":null,
+            "uf":null,
+            "profesor":null,
+            "aula":null
         },
         {		
             "fecha":"2021/09/21",
@@ -89,11 +89,11 @@
         },
         {		
             "fecha":"2021/09/21",
-            "hora":false,
-            "modulo":false,
-            "uf":false,
-            "profesor":false,
-            "aula":false
+            "hora":null,
+            "modulo":null,
+            "uf":null,
+            "profesor":null,
+            "aula":null
         },
         {		
             "fecha":"2021/09/22",
@@ -137,11 +137,11 @@
         },
         {		
             "fecha":"2021/09/22",
-            "hora":false,
-            "modulo":false,
-            "uf":false,
-            "profesor":false,
-            "aula":false
+            "hora":null,
+            "modulo":null,
+            "uf":null,
+            "profesor":null,
+            "aula":null
         },
         {		
             "fecha":"2021/09/23",
@@ -185,11 +185,11 @@
         },
         {		
             "fecha":"2021/09/23",
-            "hora":false,
-            "modulo":false,
-            "uf":false,
-            "profesor":false,
-            "aula":false
+            "hora":null,
+            "modulo":null,
+            "uf":null,
+            "profesor":null,
+            "aula":null
         },
     //////////////////// viernes /////////////
         {		
