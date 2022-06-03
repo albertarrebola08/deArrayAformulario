@@ -8,14 +8,13 @@ box-sizing: border-box;
 
 
 .day{
-    
     background-color:white;
     border-bottom:1px solid lightgray
 }
 
 .bloquesDias{
     display: flex;
-    width:1000px;
+
     height: auto
 }
 .day{
@@ -50,6 +49,7 @@ box-sizing: border-box;
     display: flex;
     position:fixed;
     height:auto;
+    width: 100%;
 
 }
 .vacio{
@@ -66,20 +66,23 @@ box-sizing: border-box;
     margin: 4px;
     padding-top: 200px;
     display: flex;
+    width: 100%;
+    
    
     
 }
 .quadricula{
     height:2000px;
-    width: 1000px;
     display: flex;
     margin-left: 4px;
+
     
 }
 .student{
     display: flex;
     border:solid black 1px;
-    height:30px;
+    height:40px;
+    width: 200px;
 }
 
 .alumnos{
@@ -88,7 +91,13 @@ box-sizing: border-box;
 }
 
 .casilla{
-    width:30px;
-    height:30px;
+    width:50px;
+    height:40px;
     border:1px solid
+}
+.containerGlobal{
+  width:1300px; 
+  background-color: white;
+
+
 }
