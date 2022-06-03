@@ -72,7 +72,7 @@ function pintaAlumnos(){
         htmlAlumnos +=  `
     
     <div class="student fs-6">
-        <div class="numOrden">${i}</div>
+        <div class="numOrden mx-2">${i}</div>
         <div class="studentName">${arrayUsuarios[i].nombre+' '+arrayUsuarios[i].apellidos} </div>
     </div>`
     }
@@ -95,7 +95,7 @@ function pintaCuadricula(){
              else{
                 console.log('pinto');
                 htmlCuadricula +=`
-                <div class="casilla">${y}</div>`
+                <div class="casilla">${''}</div>`
                 
             }
             

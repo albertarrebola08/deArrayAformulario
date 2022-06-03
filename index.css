@@ -46,17 +46,24 @@ box-sizing: border-box;
     background-color:white
     }
 .header{
-    
+    background-color: white;
     display: flex;
     position:fixed;
+    height:auto;
+
 }
 .vacio{
-  
+    background-image: url("http://www.fpllefia.com/images/logollefia_blanco2.png");
+    background-repeat: no-repeat;
+    background-position:center;
     width: 200px;
     background-color: rgb(28, 28, 112);
+    margin-left:4px;
+    margin-right:4px;
+    margin-top: 4px;
 }
 .body{
-    
+    margin: 4px;
     padding-top: 200px;
     display: flex;
    
@@ -66,6 +73,7 @@ box-sizing: border-box;
     height:2000px;
     width: 1000px;
     display: flex;
+    margin-left: 4px;
     
 }
 .student{
